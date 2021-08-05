@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { getTitleThunk } from '@/apis/homeApis';
 import { IHomeState } from '@/types/HomeTypes';
-import './home.scss';
+import './home.less';
 
 // React.memo instead of PureComponent
 interface IHomeProps {
