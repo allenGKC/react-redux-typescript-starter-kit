@@ -3,9 +3,9 @@
  * This is generate container and component function
  * How to use
  * 1.npm run generate component <component name>
- *   Generate 2 files (component js and component scss) in <component name> folder
+ *   Generate 2 files (component js and component less) in <component name> folder
  * 2.npm run generate sub-component <component name> <sub component path>
- *   Generate 2 files (component js and component scss) in under the <sub component path> folder
+ *   Generate 2 files (component js and component less) in under the <sub component path> folder
  * 3.npm run generate container <container name>
  *   Generate container, component, action, reducer
  * PS:
@@ -85,10 +85,10 @@ function generateComponent(upperCaseName, lowerCaseName, subPath) {
     const filePath = finialPath + upperCaseName + '/' + upperCaseName + 'Component.tsx',
       tempFilePath = './tools/generateTemplate/components/Template/TemplateComponent.tsx';
     createFile(upperCaseName, lowerCaseName, filePath, tempFilePath);
-    // generate component scss
-    const scssFilePath = finialPath + upperCaseName + '/' + lowerCaseName + '.scss',
-      scssTempFilePath = './tools/generateTemplate/components/Template/template.scss';
-    createFile(upperCaseName, lowerCaseName, scssFilePath, scssTempFilePath);
+    // generate component less
+    const lessFilePath = finialPath + upperCaseName + '/' + lowerCaseName + '.less',
+      lessTempFilePath = './tools/generateTemplate/components/Template/template.less';
+    createFile(upperCaseName, lowerCaseName, lessFilePath, lessTempFilePath);
   });
 }
 

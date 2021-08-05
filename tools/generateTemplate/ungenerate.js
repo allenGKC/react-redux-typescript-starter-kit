@@ -3,9 +3,9 @@
  * This is generate container and component function
  * How to use
  * 1.npm run ungenerate component <component name>
- *   Delete 2 files (component js and component scss) in <component name> folder
+ *   Delete 2 files (component js and component less) in <component name> folder
  * 2.npm run ungenerate sub-component <component name> <sub component path>
- *   Delete 2 files (component js and component scss) in under the <sub component path> folder
+ *   Delete 2 files (component js and component less) in under the <sub component path> folder
  * 3.npm run ungenerate container <container name>
  *   Delete container, component, action, reducer
  * PS:
