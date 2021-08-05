@@ -10,7 +10,10 @@ const HomePage: React.FunctionComponent = () => {
   const homeState = useSelector<RootState, IHomeState>((state) => state.home, shallowEqual);
 
   return (
-    <HomeComponent fetchTitleThunk={() => dispatch(rootAction.homeActions.fetchTitleThunk())} homeState={homeState} />
+    <HomeComponent
+      fetchTitleThunk={(args) => dispatch(rootAction.homeActions.fetchTitleThunk(args))}
+      homeState={homeState}
+    />
   );
 };
 

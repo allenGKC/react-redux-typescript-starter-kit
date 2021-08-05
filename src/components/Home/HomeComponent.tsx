@@ -22,8 +22,6 @@ const HomeComponent: React.FunctionComponent<IHomeProps> = React.memo(({ fetchTi
     <div className="container-fluid">
       <div className="row">
         <div className="col-sm-12">{homeState.title ? homeState.title : ''}</div>
-        <div className="col-sm-12">{homeState.epicTitle ? homeState.epicTitle : ''}</div>
-        <div>{!homeState.epicTitle && !homeState.title ? 'Loading...' : ''}</div>
       </div>
     </div>
   );
