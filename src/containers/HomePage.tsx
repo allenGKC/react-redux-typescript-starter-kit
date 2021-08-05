@@ -5,16 +5,12 @@ import HomeComponent from '@/components/Home/HomeComponent';
 import { RootState } from '@/types/GlobalTypes';
 import { IHomeState } from '@/types/HomeTypes';
 
-const HomePage = () => {
+const HomePage: React.FunctionComponent = () => {
   const dispatch = useDispatch();
   const homeState = useSelector<RootState, IHomeState>((state) => state.home, shallowEqual);
 
   return (
-    <HomeComponent
-      fetchTitleThunk={(args) => dispatch(rootAction.homeActions.fetchTitleThunk(args))}
-      fetchTitleEpicRequest={() => dispatch(rootAction.homeActions.fetchTitleEpicAsync.request())}
-      homeState={homeState}
-    />
+    <HomeComponent fetchTitleThunk={() => dispatch(rootAction.homeActions.fetchTitleThunk())} homeState={homeState} />
   );
 };
 

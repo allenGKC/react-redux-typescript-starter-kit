@@ -7,7 +7,7 @@ const urlHelper = {
       apiPath: 'CloudShadow/Api/',
     },
   },
-  t: (server: IServer, url: string) => {
+  t: (server: IServer, url: string): string => {
     const localDev =
       window.location.href.indexOf('//localhost') > -1 ||
       window.location.href.indexOf('//192') > -1 ||
