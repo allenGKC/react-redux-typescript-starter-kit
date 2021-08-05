@@ -39,7 +39,8 @@ function generate(type, componentName, subPath) {
     generateAction(upperCaseName, lowerCaseName);
     generateApi(upperCaseName, lowerCaseName);
     generateType(upperCaseName, lowerCaseName);
-    generateEpic(upperCaseName, lowerCaseName);
+    // removed because the project do not need epic
+    // generateEpic(upperCaseName, lowerCaseName);
     generateReducer(upperCaseName, lowerCaseName);
   } else if (type === 'component') {
     generateComponent(upperCaseName, lowerCaseName);
