@@ -8,7 +8,7 @@ import configureStore from './stores/configureStore';
 import { history } from '@/reducers';
 
 const store = configureStore();
-const App = (): JSX.Element => {
+const App = () => {
   return (
     <Provider store={store}>
       {/* ConnectedRouter will use the store from Provider automatically */}
