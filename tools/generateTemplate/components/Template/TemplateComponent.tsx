@@ -2,13 +2,14 @@ import * as React from 'react';
 import { getThunkRequest } from '@tempPath/apis/templateApis';
 import { ITemplateState } from '@tempPath/types/TemplateTypes';
 import './template.less';
+import { useEffect } from 'react';
 
 interface ITemplateProps {
   fetchThunk: (temp: ITemplateState) => void;
   templateState: ITemplateState;
 }
 const TemplateComponent: React.FunctionComponent<ITemplateProps> = React.memo(({ fetchThunk, templateState }) => {
-  React.useEffect(() => {
+  useEffect(() => {
     // Get data by thunk
     getThunkRequest().then((payload) => {
       fetchThunk(payload.data);
