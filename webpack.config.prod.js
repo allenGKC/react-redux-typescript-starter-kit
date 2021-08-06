@@ -1,17 +1,18 @@
 const webpack = require('webpack');
-const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
+// const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const path = require('path');
 const HappyPack = require('happypack');
-const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
-const smp = new SpeedMeasurePlugin(); //not support html-webpack-plugin
-const deps = require('./package.json').dependencies;
+// const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
+// const smp = new SpeedMeasurePlugin(); //not support html-webpack-plugin
+// const deps = require('./package.json').dependencies;
 const folderName = new Date().getTime();
 
 module.exports = {
   mode: 'production',
+  devtool: 'source-map',
   entry: [
     // must be first entry to properly set public path
     path.resolve(__dirname, 'src/index.tsx'), // Defining path seems necessary for this to work consistently on Windows machines.
