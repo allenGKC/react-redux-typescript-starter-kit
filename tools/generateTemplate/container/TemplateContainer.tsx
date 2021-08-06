@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { useSelector, shallowEqual, useDispatch } from 'react-redux';
 import rootAction from '@tempPath/actions';
 import TemplateComponent from '@tempPath/components/Template/TemplateComponent';

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { useSelector, shallowEqual, useDispatch } from 'react-redux';
 import rootAction from '@/actions';
 import HomeComponent from '@/components/Home/HomeComponent';
