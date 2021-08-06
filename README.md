@@ -6,8 +6,8 @@
 
 ## Libraries
 
-- [Webpack](https://webpack.js.org/) v5.0.0-beta.29
-- [React](https://reactjs.org/) v16.13+
+- [Webpack](https://webpack.js.org/) v5.44.0+
+- [React](https://reactjs.org/) v17.0+
 - [TypeScript](https://www.typescriptlang.org/)
 - [ImmerJs](https://immerjs.github.io/immer/)
 - [React Router](https://reacttraining.com/react-router/)
@@ -15,13 +15,14 @@
 - [Redux-Observable](https://redux-observable.js.org/)
 - [Axios](https://github.com/axios/axios)
 - [Babel](https://babeljs.io/)
+- [Less](https://lesscss.org/#)
 
 ## Get Started
 
-1. git clone https://github.com/cloudshadow/react-redux-typescript-starter-kit.git
+1. git clone https://github.com/allenGKC/react-redux-typescript-starter-kit.git
 2. npm install
 3. npm run start:dev
-4. visit http://localhost:4001
+4. visit http://localhost:3000
 
 ## Useful Command
 
