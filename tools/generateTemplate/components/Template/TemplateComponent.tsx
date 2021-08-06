@@ -16,9 +16,9 @@ const TemplateComponent: React.FunctionComponent<ITemplateProps> = React.memo(({
   }, []);
 
   return (
-    <div className="container-fluid">
+    <div className="template-wrapper">
       <div className="row">
-        <div className="col-sm-12">{templateState.text ? templateState.text : ''}</div>
+        <div>{templateState.text ? templateState.text : ''}</div>
       </div>
     </div>
   );
