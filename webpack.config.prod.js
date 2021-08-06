@@ -18,7 +18,8 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, 'dist/' + folderName + '/'),
-    publicPath: 'http://production.domain.com/' + folderName + '/',
+    // publicPath: 'http://production.domain.com/' + folderName + '/',
+    publicPath: '',
     filename: '[name].[contenthash].js',
     chunkFilename: 'vender.[id].chunk.js',
   },
