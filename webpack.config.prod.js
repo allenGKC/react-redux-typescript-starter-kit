@@ -130,8 +130,8 @@ module.exports = {
         use: ['file-loader?name=[name].[ext]'],
       },
       {
-        test: /(\.css|\.scss|\.sass|\.less)$/,
-        use: ['style-loader', 'css-loader', 'sass-loader', 'less-loader'],
+        test: /(\.css|\.less)$/,
+        use: ['style-loader', 'css-loader', 'less-loader'],
       },
     ],
   },

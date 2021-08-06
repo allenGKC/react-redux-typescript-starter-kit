@@ -58,17 +58,17 @@ module.exports = {
       },
       inject: true,
     }),
-    new webpack.LoaderOptionsPlugin({
-      minimize: true,
-      debug: false,
-      noInfo: true, // set to false to see a list of every file being bundled.
-      options: {
-        sassLoader: {
-          includePaths: [path.resolve(__dirname, 'src', 'scss')],
-        },
-        context: '/',
-      },
-    }),
+    // new webpack.LoaderOptionsPlugin({
+    //   minimize: true,
+    //   debug: false,
+    //   noInfo: true, // set to false to see a list of every file being bundled.
+    //   options: {
+    //     sassLoader: {
+    //       includePaths: [path.resolve(__dirname, 'src', 'scss')],
+    //     },
+    //     context: '/',
+    //   },
+    // }),
     new webpack.EnvironmentPlugin({
       REACT_APP_ENV: 'production',
     }),
@@ -130,8 +130,8 @@ module.exports = {
         use: ['file-loader?name=[name].[ext]'],
       },
       {
-        test: /(\.css|\.scss|\.sass)$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        test: /(\.css|\.less)$/,
+        use: ['style-loader', 'css-loader', 'less-loader'],
       },
     ],
   },
