@@ -59,7 +59,7 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.tsx', '.ts', '.js', '.jsx'],
   },
   output: {
     filename: 'bundle.js',
