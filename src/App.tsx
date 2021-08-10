@@ -6,6 +6,7 @@ import HomePage from './containers/HomePage';
 import NotfoundPage from './containers/NotfoundPage';
 import configureStore from './stores/configureStore';
 import { history } from '@/reducers';
+import './App.less';
 
 const store = configureStore();
 const App = () => {
