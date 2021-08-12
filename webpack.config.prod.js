@@ -18,9 +18,9 @@ module.exports = {
     path.resolve(__dirname, 'src/index.tsx'), // Defining path seems necessary for this to work consistently on Windows machines.
   ],
   output: {
-    path: path.resolve(__dirname, 'dist/' + folderName + '/'),
+    path: path.resolve(__dirname, 'dist/frontend/' + folderName + '/'),
     // publicPath: 'http://production.domain.com/' + folderName + '/',
-    publicPath: '',
+    publicPath: './' + folderName + '/',
     filename: '[name].[contenthash].js',
     chunkFilename: 'vender.[id].chunk.js',
   },

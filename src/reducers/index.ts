@@ -3,7 +3,7 @@ import { createBrowserHistory, History } from 'history';
 import { connectRouter } from 'connected-react-router';
 import home from './homeReducer';
 
-export const history: History = createBrowserHistory();
+export const history: History = createBrowserHistory({ basename: '/frontend' });
 const rootReducer = combineReducers({
   home,
   router: connectRouter(history),
